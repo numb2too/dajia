@@ -6,23 +6,6 @@
 
 本專案採用純靜態網站架構 (HTML + CSS + JavaScript)，並利用本地的 `data/*.json` 檔案作為唯一的資料來源。
 
-### 📂 專案資料結構
-
-```
-.
-├── index.html           # 應用程式主頁面
-├── assets/
-│   ├── css/
-│   │   └── style.css    # 核心樣式表
-│   └── images/          # 靜態圖片資源
-├── js/
-│   ├── main.js          # 應用程式入口與主要邏輯
-│   └── components/      # 可重複使用的組件邏輯
-├── data/
-│   ├── foods.json       # 食物資料來源 (JSON)
-│   └── restaurants.json # 餐廳資料來源 (JSON)
-└── README.md            # 專案說明文件
-```
 
 ## ✨ 主要功能點
 

@@ -15,29 +15,33 @@
 - 部署：push 到 main branch，GitHub Pages 自動更新
 - 資料更新：直接編輯 data/*.json
 - 使用 READ 工具讀取 並使用 write 工具修改檔案
+- 修改前必須先讀取檔案目前的內容，不可以用記憶中的版本
 
 ## Project Structure
+```
 /
 ├── index.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css
 │   ├── js/
-│   │   ├── app.js          # 入口初始化
-│   │   ├── api.js         # 資料讀取 / fetch
-│   │   ├── render.js      # UI 渲染邏輯（建議拆出來）
-│   │   └── utils.js       # 共用工具函式
-│   └── images/            # 靜態圖片資源
+│   │   ├── app.js       # 應用程式入口初始化
+│   │   ├── api.js       # 負責資料讀取 / fetch
+│   │   ├── config.js    # 應用程式配置
+│   │   ├── render.js    # UI 渲染邏輯
+│   │   └── utils.js     # 共用工具函式
+│   └── images/          # 靜態圖片資源
 │
 ├── data/
-│   ├── foods.json
-│   ├── restaurants.json
+│   ├── foods.json      # 食譜資料來源
+│   └── restaurants.json # 餐廳資料來源
 │
-├── components/            # ❗建議新增（原本你寫的「HTML片段」應該在這）
+├── components/           # 存放可重複使用的 HTML 組件片段
 │   ├── card.html
-│   ├── modal.html
+│   └── modal.html
 │
 └── README.md
+```
 
 ## DO NOT
 - 不要使用 localStorage 儲存資料（用 JSON 作為唯一資料來源）
@@ -45,3 +49,4 @@
 - 不要用 document.write()
 - 不要在 JS 裡寫 inline CSS，樣式統一在 css/ 管理
 - 不要把多個功能塞進同一個 .js 檔
+- 不要使用英文回答問題
