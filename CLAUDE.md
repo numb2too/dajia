@@ -29,7 +29,6 @@
 │   │   ├── api.js       # 負責資料讀取 / fetch
 │   │   ├── config.js    # 應用程式配置
 │   │   ├── render.js    # UI 渲染邏輯
-│   │   └── utils.js     # 共用工具函式
 │   └── images/          # 靜態圖片資源
 │
 ├── data/
