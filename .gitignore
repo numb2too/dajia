@@ -1,0 +1,22 @@
+# Environment and System Files
+.vscode/
+.idea/
+.DS_Store
+.DS_Store?
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Local Secrets and Build Artifacts
+*.log
+*.tmp
+*.bak
+.env
+.local/
+
+# Build Output (If we had a build step)
+/dist
+/build
+/out
