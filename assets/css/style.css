@@ -1,0 +1,141 @@
+/* Global Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #e44d26; /* 模擬台灣美食的暖色調 */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Main Content Area */
+#content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Food List Wrapper - 支援響應式卡片佈局 */
+.food-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Food Card Component */
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 5px solid #e44d26;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.card-header h3 {
+    font-size: 1.6em;
+    margin: 0;
+    color: #333;
+}
+
+.category {
+    background-color: #f0ad4e; /* 淺橙色背景 */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    flex-shrink: 0; /* 防止在小螢幕下收縮 */
+}
+
+.food-description {
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #555;
+}
+
+/* Card Footer: 價格和標籤 */
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e44d26;
+}
+
+/* Tag Styling */
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #e9e9e9;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+/* Error Message Styling */
+.error-message {
+    border: 2px dashed #dc3545;
+    padding: 20px;
+    background-color: #fdeaea;
+    color: #dc3545;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.error-message h2 {
+    margin-bottom: 15px;
+}

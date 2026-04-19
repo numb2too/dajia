@@ -1,0 +1,36 @@
+{
+    "foods": [
+        {
+            "id": 1,
+            "name": "甲內紅燒肉",
+            "category": "主食",
+            "description": "道地的甲內紅燒肉，色澤誘人，口感軟糯。",
+            "priceEstimate": "NT$ 150 - 250",
+            "tags": ["紅燒", "肉類", "經典"]
+        },
+        {
+            "id": 2,
+            "name": "甲溪海鮮丼",
+            "category": "海鮮",
+            "description": "以新鮮海產搭配當地醬料，營養豐富。",
+            "priceEstimate": "NT$ 300 - 500",
+            "tags": ["海鮮", "丼飯", "海味"]
+        },
+        {
+            "id": 3,
+            "name": "芋頭蒸糕",
+            "category": "點心",
+            "description": "香甜綿密的芋頭蒸糕，適合搭配飲料。",
+            "priceEstimate": "NT$ 80 - 120",
+            "tags": ["甜點", "芋頭", "伴手禮"]
+        },
+        {
+            "id": 4,
+            "name": "甲冬特色麵食",
+            "category": "主食",
+            "description": "結合在地食材，具有獨特的口感和風味。",
+            "priceEstimate": "NT$ 100 - 200",
+            "tags": ["麵食", "在地"]
+        }
+    ]
+}
